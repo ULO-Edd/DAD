@@ -1,0 +1,109 @@
+# -------------------------
+# Project-level .gitignore
+# Root: DADProject
+# -------------------------
+
+# macOS
+.DS_Store
+
+# parcel / next / nuxt / vite / etc caches
+.cache
+.parcel-cache
+.next
+.nuxt
+dist
+.vuepress/dist
+.temp
+**/.vitepress/dist
+**/.vitepress/cache
+.docusaurus
+.serverless/
+.fusebox/
+.dynamodb/
+.tern-port
+.vscode-test
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# -------------------------
+# Frontend: Vue (in frontend/)
+# -------------------------
+# Node deps and build output for the Vue app
+/frontend/node_modules/
+/frontend/dist/
+/frontend/build/
+/frontend/.cache/
+/frontend/.vite/
+/frontend/.serverless/
+/frontend/.vscode/
+
+# Vue / Vite / Vue CLI env files (local)
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+frontend/.env.production
+websockets/.env.production
+# Misc frontend files that should be ignored
+/frontend/public/hot
+/frontend/public/storage
+
+# -------------------------
+# Backend: PHP / Laravel (in api/)
+# -------------------------
+/api/vendor/
+/api/node_modules/
+/api/vscode/
+/api/.env
+/api/.env.*.local
+
+# Laravel storage and compiled files
+/api/storage/
+/api/storage/*.key
+/api/public/storage
+/api/bootstrap/cache/*.php
+
+# Homestead / vagrant
+/api/.vagrant
+/api/Homestead.yaml
+/api/Homestead.json
+
+# composer
+/api/.composer/
+/api/.composer-cache
+
+# Laravel specific tooling
+/api/.phpunit.result.cache
+
+# -------------------------
+# Websockets: NodeJs (in websockets)
+# -------------------------
+/websockets/node_modules/
+/websockets/.env
+# -------------------------
+# Other useful ignores
+# -------------------------
+# Generated environment files used by editors/OS
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs and runtime files
+*.log
+*.tmp
+*.temp
+
+# Certificate/key files
+*.pem
+*.key
+
+# If you have any local secrets or files not to track, add them here:
+# /path/to/some/file
+
+/frontend/package-lock.json
+/websockets/package-lock.json
+/api/package-lock.json
+
+.vscode
